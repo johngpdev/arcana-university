@@ -1,0 +1,23 @@
+# dependencies
+node_modules/
+
+# build output
+dist/
+.vite/
+
+# environment
+.env
+.env.local
+.env.*.local
+
+# local tooling
+.opencode/
+
+# separate projects kept out of this repo
+Arcana/
+mobile/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.log
