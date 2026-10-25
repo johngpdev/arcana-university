@@ -30,7 +30,11 @@ Built for a 24-hour hackathon.
 
 ## Run it
 
+Requires **Node 20.19+ or 22.12+** (Vite 8 will refuse older versions).
+
 ```bash
+git clone https://github.com/johngpdev/arcana-university.git
+cd arcana-university
 npm install
 npm run dev
 ```
@@ -41,6 +45,19 @@ Open http://localhost:5173
 npm run build     # production build to dist/
 npm run preview   # preview the build
 ```
+
+No backend, no API keys, no network calls. Accounts and data live in `localStorage`.
+
+**Judging the project?** See [DEMO.md](./DEMO.md) for a 5-minute walkthrough and troubleshooting.
+
+### Troubleshooting
+
+| Symptom | Fix |
+| --- | --- |
+| `npm` not recognized | Install Node LTS from nodejs.org |
+| `npm.ps1 cannot be loaded` (Windows) | `Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass`, or use `npm.cmd` |
+| Vite complains about Node version | Upgrade to Node 20.19+ or 22.12+ |
+| Port 5173 in use | `npm run dev -- --port 5174` |
 
 ## Routes
 
